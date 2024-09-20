@@ -23,7 +23,7 @@ const Cart = () => {
         <button
           type="button"
           className="cart-heading"
-          onClick={setShowCart(false)}
+          onClick={() => setShowCart(false)}
         >
           <AiOutlineLeft />
           <span>Your Cart</span>
@@ -34,7 +34,7 @@ const Cart = () => {
           <div className="empty-cart">
             <AiOutlineShopping size={150} />
             <h3>Your Shopping bag is empty</h3>
-            <link href="/">
+            <Link href="/">
               <button
                 type="button"
                 onClick={() => setShowCart(false)}
@@ -42,7 +42,7 @@ const Cart = () => {
               >
                 Continue Shopping
               </button>
-            </link>
+            </Link>
           </div>
         )}
 
